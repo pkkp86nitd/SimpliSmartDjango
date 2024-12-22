@@ -128,4 +128,5 @@ I tried redis as scheduler , it periodic scheduler didn't worked for me
 Commands to check worker and scheduler logs
 
 celery -A backend_service worker --loglevel=info
+
 celery -A backend_service  beat --loglevel=info
