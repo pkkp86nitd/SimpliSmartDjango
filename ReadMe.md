@@ -121,3 +121,11 @@ curl --location 'http://127.0.0.1:8000/deployments/1/' \
 curl --location 'http://127.0.0.1:8000/deployments/1/' \
 --header 'Authorization: Bearer <TOKEN>' \
 --request DELETE
+   
+
+
+I tried redis as scheduler , it periodic scheduler didn't worked for me
+Commands to check worker and scheduler logs
+
+celery -A backend_service worker --loglevel=info
+celery -A backend_service  beat --loglevel=info
